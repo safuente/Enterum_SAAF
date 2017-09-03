@@ -1,0 +1,14 @@
+.footer {
+    display: flex;
+    background: fade-out($color-lacey-navy, 0.15);
+    color: $color-fat; 
+    padding: 10px;
+    font-size: 15px;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+    &:hover {
+        background: $color-lacey-navy;
+    }
+    
+}

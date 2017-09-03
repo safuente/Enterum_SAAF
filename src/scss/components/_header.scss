@@ -1,0 +1,123 @@
+.web-header {
+    box-sizing: border-box;
+    background: fade-out($color-lacey-navy, 0.15);
+    padding: 15px;
+    color: $color-feed-eyes;
+    text-align: center;
+    top: 0px;
+    width: 100vw;
+    transition: background 0.2s;
+    &:hover {
+        background: $color-lacey-navy;
+    }
+    .web-title {
+        font-weight: bold;
+        display: inline-block;
+        text-transform: uppercase;
+        font-size: $font-size-large;
+    }
+}
+
+.navbar {
+    width: 100vw;
+    display: flex;
+    background-color: $color-clear-tides;
+    box-shadow: 5px 5px 5px $color-shadow;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    .navbar-list {
+        text-align: center;
+        display:flex;
+        flex-flow: row wrap;
+        
+        .navbar-item {
+            padding:20px;
+
+
+        
+        font-size: 16px;
+            .navbar-link{
+                text-decoration: none;
+                list-style-type: none;
+                padding: 20px;
+                color:$color-feed-eyes;
+                transition: all 0.5s;
+                
+               
+            }
+        }
+    }   
+}
+
+.navbar > .navbar-list > .navbar-item.active  {
+    
+    @include if-desktop {
+        background-color: $color-navy-blue;
+        border-bottom: 2px solid $color-feed-eyes; 
+    }
+       
+}
+    
+
+
+.navbar > .navbar-list > .navbar-item:hover {
+    @include if-desktop {
+    background-color: $color-navy-blue;
+    border-bottom: 2px solid $color-feed-eyes;
+    }
+    
+}
+
+.show-menu {
+    display: list-item;
+}
+
+
+.nav-button {
+   display:none;
+    border: 0;
+    width: 100px;
+    height: 40px;
+    background-color: $color-clear-tides;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    outline: none;
+    margin: 15px;
+    flex-grow: 1;
+    
+}
+
+@include if-mobile  { 
+    .navbar {
+                padding: 0;
+    }
+    .navbar > .navbar-list {
+                flex-direction: column;
+                
+    }
+    .navbar > .navbar-list > .navbar-item {
+        display:none;
+        
+    }
+    button.nav-button {
+                display: block;
+                margin: 5px auto;
+    }
+
+}
+
+  .search-form{
+    @include if-desktop {
+        margin: 0 auto; // center the container on the screen
+        width: 1024px;
+    }
+  }
+  .form-control-group{
+    width:50%;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0 5px;
+    
+    }
+

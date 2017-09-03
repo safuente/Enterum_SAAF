@@ -1,0 +1,42 @@
+// Font families
+$main-font-family: 'Roboto Slab', serif;
+$title-font-family: 'PT Serif', serif;
+$body-font-family: $main-font-family;
+
+// Font sizes
+$font-size-base: 16px;
+$font-size-small: $font-size-base - 5px;
+$font-size-medium: $font-size-base - 3px;
+$font-size-large: $font-size-base + 5px;
+$font-size-h1: $font-size-base + 15px;
+$font-size-h2: $font-size-base + 12px;
+$font-size-h3: $font-size-base + 9px;
+$font-size-h4: $font-size-base + 6px;
+$font-size-h5: $font-size-base + 3px;
+$font-size-h6: $font-size-base;
+
+// Base colors
+$color-navy-blue: #091C43;
+$color-lacey-navy: #3D506C;
+$color-clear-tides: #A6B6C3;
+$color-fat: #D9D8DD;
+$color-feed-eyes: #F6F7F2;
+$color-shadow:#888888;
+
+// Main components colors
+$main-text-color: $color-navy-blue;
+$links-color: $color-fat;
+
+// Responsive
+$mobile-portrait-width: 414px;
+$mobile-landscape-width: 767px;
+$tablet-portrait-width: $mobile-landscape-width + 1;
+$tablet-landscape-width: 1024px;
+
+// Forms variables
+$form-input-border-color: $color-lacey-navy;
+$form-input-outline-color: $color-lacey-navy;
+$form-button-background-color: $color-lacey-navy;
+$form-button-font-color: $color-feed-eyes;
+$form-error-background-color: $color-navy-blue;
+$form-error-font-color: $color-navy-blue;

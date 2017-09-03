@@ -1,0 +1,100 @@
+
+body {
+    background: $color-fat;
+    font-family: $main-font-family;
+    font-size: $font-size-base;
+    color: $main-text-color;
+    
+}
+
+form {
+    padding: 10px;
+    margin: 0 auto;
+    
+    
+}
+
+label, input, button {
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+   
+}
+
+label {
+    font-size: $font-size-medium;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 5px;
+    margin: 0 auto;
+}
+
+textarea {
+    width: 100%;
+    display: inline-block;
+    font-size: $font-size-base;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px auto;
+    height: 200px;
+    box-sizing: border-box;
+    &:focus {
+        outline-color: $form-input-outline-color;
+    }
+    
+}
+
+input {
+    margin: 5px 0px 5px 0px ;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid $form-input-border-color;
+    font-size: $font-size-base;
+    &:focus {
+        outline-color: $form-input-outline-color;
+    }
+}
+
+button {
+    @extend input;
+    background-color: $form-button-background-color;
+    color: $form-button-font-color;
+    margin: 10px auto;
+    font-weight: bold;
+    transition: all 0.25s;
+    &:active {
+        background: lighten($form-button-background-color, 25%);
+    }
+}
+
+h1 {
+    text-align: center;
+}
+h2 {
+    display: block;
+    border-top: 2px solid $color-shadow;
+    border-bottom: 2px solid $color-shadow;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: $color-navy-blue;  
+}
+
+h3 {
+    display: block;
+    border-top: 2px solid $color-shadow;
+    border-bottom: 2px solid $color-shadow;
+    margin: 10px;
+    text-align: center;
+    
+    
+    
+}
+
+
+b { 
+    font-weight: bold;
+}
+i {
+    font-style: italic;
+    color: $color-navy-blue;
+}

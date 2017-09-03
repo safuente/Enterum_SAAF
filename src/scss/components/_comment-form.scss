@@ -1,0 +1,36 @@
+.comment-form {
+        
+        .ui-status {
+
+            
+            &.error {
+                text-align: center;
+                background-color: $form-error-background-color;
+                padding: 10px;
+                border-radius: 5px;
+                color:red;
+                margin-bottom: 10px;
+                display:none;
+    
+            }
+            &.loading {
+    
+                text-align: center;
+                margin-bottom: 10px;
+                display:none;
+    
+            }
+        }
+    
+        &.error .ui-status.error {display: block;}
+        &.loading .ui-status.loading {display: block;}
+    
+        
+            .form-button {
+                width: 50%;
+                margin:0 auto;
+            }
+            
+        }
+    
+    
